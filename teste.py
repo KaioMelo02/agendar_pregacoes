@@ -44,7 +44,7 @@ def style():
 style()
 
 # Título do aplicativo
-st.title("Agendador de Pregação")
+st.title("Agendar de Pregação")
 
 # Criando campos para entrada de dados
 data = st.date_input("Data da Pregação", format="DD/MM/YYYY")
