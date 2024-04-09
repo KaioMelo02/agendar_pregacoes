@@ -1,9 +1,44 @@
 import streamlit as st
 import pandas as pd
 
+# Define o estilo da página
 def style():
     st.markdown("""
-        ... seu CSS aqui ...
+        <style>
+            .reportview-container {
+                background: #f7f7f7;
+            }
+            .sidebar .sidebar-content {
+                background: #37474f;
+                color: #ffffff;
+            }
+            .Widget>label {
+                color: #ffffff;
+            }
+            .stButton>button {
+                color: #ffffff;
+                background-color: #1976d2;
+            }
+            .stTextInput>div>div>input {
+                background-color: #455a64;
+                color: #ffffff;
+            }
+            .stTable>div>div>div>div>div>table {
+                color: #ffffff;
+            }
+            /* Estilo personalizado para o seletor de data */
+            .stDateInput>div {
+                background-color: #455a64 !important;
+                border-radius: 10px !important;
+            }
+            .stDateInput>div>div>input {
+                color: #ffffff !important;
+            }
+            .stDateInput>div>div>div>div>div>div>div {
+                background-color: #1976d2 !important;
+                border-radius: 5px !important;
+            }
+        </style>
     """, unsafe_allow_html=True)
 
 style()
